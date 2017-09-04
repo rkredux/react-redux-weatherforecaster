@@ -22,7 +22,8 @@ class SearchBar extends Component{
 	}
 
 	onFormSubmit(event){
-		event.preventDefault(); 
+		event.preventDefault(); //prevents it from 
+		//connecting to the server
 		this.props.fetchWeather(this.state.city); 
 		this.setState({city: ""})
 	}
